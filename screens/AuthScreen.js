@@ -18,9 +18,9 @@ export default function MainScreen({ navigation, route }) {
       },
     };
 
-    const apiUrl = "http://dks.tuva.info/Obmen/mobile/}";
+    const apiUrl = "https://dks.tuva.info/Obmen/Mobile/}";
     const data = { mobileLogin: { login: log, password: pass } };
-
+    console.log(data);
     axios
       .post(apiUrl, data, config)
       .then(function (response) {
@@ -41,7 +41,7 @@ export default function MainScreen({ navigation, route }) {
       {/* картинка   */}
       <Image
         style={styles.vImage}
-        source={require("../assets/terminalIcon.png")}
+        source={require("../assets/Fon01.jpg")}
       />
       <Text>{"\n"}</Text>
       {/* здесь делаем вход */}
